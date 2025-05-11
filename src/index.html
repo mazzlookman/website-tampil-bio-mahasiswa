@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Biodata Mahasiswa</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>Biodata Mahasiswa</h1>
+    <form id="biodataForm">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required />
+
+        <label for="jenisKelamin">Jenis Kelamin:</label>
+        <select id="jenisKelamin" name="jenisKelamin" required>
+            <option value="">-- Pilih --</option>
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan</option>
+        </select>
+
+        <label for="prodi">Program Studi:</label>
+        <input type="text" id="prodi" name="prodi" required />
+
+        <label for="fakultas">Fakultas:</label>
+        <input type="text" id="fakultas" name="fakultas" required />
+
+        <div class="button-group">
+            <button type="submit">Tampilkan Biodata</button>
+            <button type="reset" id="resetBtn">Reset</button>
+        </div>
+    </form>
+
+    <div id="hasilBiodata" class="biodata-output">
+        <p><em>Biodata akan ditampilkan di sini setelah Anda mengisi form.</em></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
